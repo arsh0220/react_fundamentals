@@ -6,6 +6,7 @@ import Services from './components/services';
 import LogIn from './components/login';
 import Footer from './components/footer';
 import Sidebar from './components/sidebar';
+import ToolBox from './components/toolbox';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
               <li><Link to="/about">About</Link></li>
               <li><Link to="/services">Services</Link></li>
               <li><Link to="/login">LogIn</Link></li>
+              <li><Link to="/toolbox">ToolBox</Link></li>
             </ul>
           </nav>
           <Routes>
@@ -26,6 +28,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/login" element={<LogIn />} />
+            <Route path="/toolbox" element={<ToolBox />} />
           </Routes>
           <Footer />
         </div>
